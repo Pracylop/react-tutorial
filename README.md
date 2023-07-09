@@ -68,7 +68,38 @@ _vite.config.ts_ : This is a configuration file for Vite. You may never have to 
 
 # Creating A React Component
 
-Add a new file in the src folder e.g. Message.tsx
+1. Add a new file in the src folder with a .tsx extension e.g. Message.tsx
+2. Define a function in using PascalCasing as the name e.g. function Message(){}
+3. Use JSX syntax to define a page element and a 'return' statement to return it
+4. Export the component
+
+Here is how the code inside the Message.tsx would be defined
+
+```
+function Message(){
+    return <h1> Hello World <h1>
+}
+
+export default Message
+```
+
+# Adding A React Component to the App
+
+To add a react component to the App, execute the following steps
+
+1. Open the App.tsx document
+2. Import the target Component
+3. Add the Component inside the App() function
+4. Export the App function
+
+Here is how App.tsx would look if you add only the Message Component
+
+import Message from "./Message"
+function App(){
+return <div>Message</div>
+}
+
+export default App
 
 # Major Steps
 
